@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Syed W Hoque</title>
+        <meta name="description" content="Salamander">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <script src= "https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+        <!-- Contains information pertaining to header -->
+        <main>
+        <section class="header">
+            <a href="index.html"><img src="images/logo.png" alt="logo" class="header-img"></a>
+            <nav>
+                <div class="nav-links" id="my_links">
+                    <i class="fa fa-times" onclick="hide_menu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="mailto:swhoque@protonmail.com">Contact</a></li>
+                        <li><a href="images/Hoque_Syed_Resume.pdf" download="HoqueS_Resume">Resume</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="show_menu()"></i>
+            </nav>
+        </section>
+        <!-- Contains information pertaining to main projects section-->
+        <section class="projects" id="project-tab">
+            <h1 id="project-tab-h1">Projects</h1>
+
+            <div class="ind-project">
+              <div class="slideshow-container">
+
+                <div class="mySlides">
+                  <div class="numbertext">1 / 15</div>
+                  <img src="images/main_screen.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">2 / 15</div>
+                  <img src="images/jam_screen.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">3 / 15</div>
+                  <img src="images/practice_screen.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">4 / 15</div>
+                  <img src="images/practice_note_screen.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">5 / 15</div>
+                  <img src="images/practice_note_result.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">6 / 15</div>
+                  <img src="images/practice_chord.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">7 / 15</div>
+                  <img src="images/practice_chord_result.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">8 / 15</div>
+                  <img src="images/practice_scale.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">9 / 15</div>
+                  <img src="images/practice_scale_result.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">10 / 15</div>
+                  <img src="images/learn_screen.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">11 / 15</div>
+                  <img src="images/learn_notes.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">12 / 15</div>
+                  <img src="images/learn_chord.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">13 / 15</div>
+                  <img src="images/learn_scale.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">14 / 15</div>
+                  <img src="images/login_screen.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">15 / 15</div>
+                  <img src="images/register_screen.png">
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+              <!-- The dots/circles -->
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <span class="dot" onclick="currentSlide(8)"></span>
+                <span class="dot" onclick="currentSlide(9)"></span>
+                <span class="dot" onclick="currentSlide(10)"></span>
+                <span class="dot" onclick="currentSlide(11)"></span>
+                <span class="dot" onclick="currentSlide(12)"></span>
+                <span class="dot" onclick="currentSlide(13)"></span>
+                <span class="dot" onclick="currentSlide(14)"></span>
+                <span class="dot" onclick="currentSlide(15)"></span>
+              </div> 
+            <p>
+              Developed a guitar app that helps one learn guitar and music theory fundamentals. It is aimed at
+              beginner guitarists and those who want to brush up on their theory. <br><br>Developed using Python (Logic), Custom tkinter (GUI),
+              SQLite3 (Database), and bcrypt (Password Hashing). <br><br>It features a responsive and user friendly interface.
+              <br><br>In the process of developing, I learned about designing user interfaces, experience, and databases. As 
+              well as designing maintainable codebase.<br><br>
+              <a href="https://github.com/swhoque/Fretboard-Master" target="_blank">Check out the Github!</a>
+            </p>  
+        </div>    
+        </section>
+    </main>
+      <!-- Contains information pertaining to footer-->
+        <section class="footer">
+         <footer>
+            &copy; Syed Hoque. All Rights Reserved 2024
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/syedwhoque" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <a href="https://github.com/swhoque" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+        </footer>
+        </section>
+        </div>
+        <script src="scripts.js"></script>
+    </body>
+</html>

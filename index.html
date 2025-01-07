@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Syed W Hoque</title>
+        <meta name="description" content="Syed W Hoque">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="images/logo.png" type="image/png">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <script src= "https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+        <!-- Contains information pertaining to header -->
+        <main>
+        <section class="header">
+            <a href="index.html"><img src="images/logo.png" alt="logo" class="header-img"></a>
+            <nav>
+                <div class="nav-links" id="my_links">
+                    <i class="fa fa-times" onclick="hide_menu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="mailto:swhoque@protonmail.com" target="_blank">Contact</a></li>
+                        <li><a href="images/Hoque_Syed_Resume.pdf" target="_blank">Resume</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="show_menu()"></i>
+            </nav>
+        </section>
+        <div id="header-text">
+            <h1>Hi, I'm <a href="about.html" id="my-name">Syed Hoque</a>,<br>Currently a junior at UCONN studying CS</h1>
+        </div>
+        <!-- Contains information pertaining to projects -->
+        <section class="projects" id="project-tab">
+            <h1 id="project-tab-h1">Featured Projects</h1>
+            <div class="ind-project">
+
+                            <!-- Images used to open the lightbox -->
+            <div class="row">
+                <div class="column">
+                <img src="images/main_screen.png" alt="main screenshot" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+            </div>
+            
+            <!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+            
+                <div class="mySlides">
+                    <div class="numbertext">1 / 15</div>
+                    <img src="images/main_screen.png" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">2 / 15</div>
+                    <img src="images/jam_screen.png" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">3 / 15</div>
+                    <img src="images/practice_screen.png" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">4 / 15</div>
+                    <img src="images/practice_note_screen.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 15</div>
+                    <img src="images/practice_note_result.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 15</div>
+                    <img src="images/practice_chord.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">7 / 15</div>
+                    <img src="images/practice_chord_result.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">8 / 15</div>
+                    <img src="images/practice_scale.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">9 / 15</div>
+                    <img src="images/practice_scale_result.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">10 / 15</div>
+                    <img src="images/learn_screen.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">11 / 15</div>
+                    <img src="images/learn_notes.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">12 / 15</div>
+                    <img src="images/learn_chord.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">13 / 15</div>
+                    <img src="images/learn_scale.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">14 / 15</div>
+                    <img src="images/login_screen.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">15 / 15</div>
+                    <img src="images/register_screen.png" style="width:100%">
+                </div>
+            
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+            
+                <!-- Thumbnail image controls -->
+                <div id="demo-col">
+                    <img class="demo" src="images/main_screen.png" onclick="currentSlide(1)">
+                </div>
+            
+                <div id="demo-col">
+                    <img class="demo" src="images/jam_screen.png" onclick="currentSlide(2)">
+                </div>
+            
+                <div id="demo-col">
+                    <img class="demo" src="images/practice_screen.png" onclick="currentSlide(3)">
+                </div>
+            
+                <div id="demo-col">
+                    <img class="demo" src="images/practice_chord.png" onclick="currentSlide(4)">
+                </div>
+
+                <div id="demo-col">
+                    <img class="demo" src="images/practice_chord_result.png" onclick="currentSlide(5)">
+                </div>
+
+                <div id="demo-col">
+                    <img class="demo" src="images/practice_note_screen.png" onclick="currentSlide(6)">
+                </div>
+
+                <div id="demo-col">
+                    <img class="demo" src="images/practice_note_result.png" onclick="currentSlide(7)">
+                </div>
+
+                <div id="demo-col">
+                    <img class="demo" src="images/practice_scale.png" onclick="currentSlide(8)">
+                </div>
+
+                <div id="demo-col">
+                    <img class="demo" src="images/practice_scale_result.png" onclick="currentSlide(9)">
+                </div>
+
+                <div id="demo-col">
+                    <img class="demo" src="images/learn_screen.png" onclick="currentSlide(10)">
+                </div>
+
+                <div id="demo-col">
+                    <img class="demo" src="images/learn_chord.png" onclick="currentSlide(11)">
+                </div>
+
+                <div id="demo-col">
+                    <img class="demo" src="images/learn_notes.png" onclick="currentSlide(12)">
+                </div>
+
+                <div id="demo-col">
+                    <img class="demo" src="images/learn_scale.png" onclick="currentSlide(13)">
+                </div>
+
+                <div id="demo-col">
+                    <img class="demo" src="images/login_screen.png" onclick="currentSlide(14)">
+                </div>
+
+                <div id="demo-col">
+                    <img class="demo" src="images/register_screen.png" onclick="currentSlide(15)">
+                </div>
+            </div>
+            </div> 
+            <p>Developed using Tkinter, Python, and SQLite3. <br>
+              <a href="projects.html">Learn more</a>
+            </p>  
+        </div>    
+        </section>
+        </main>
+          <!-- Contains information pertaining to footer-->
+           <section class="footer">
+            <footer>
+                &copy; Syed Hoque. All Rights Reserved 2024
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/syedwhoque" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/swhoque" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </footer>
+           </section>
+        </div>
+         <!-- Contains js file -->
+    <script src="scripts.js"></script>
+    </body>
+</html>
